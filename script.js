@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const introMessage = document.getElementById('intro-message');
     const messageContainer = document.getElementById('message-container');
     const messageText = document.getElementById('message-text');
+    const finalReveal = document.getElementById('final-reveal');
 
     const messages = [
         "Happy Birthday! May this year be your best one yet. 🎉",
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "your messages are always the best part of my day. i wait for your message every day, everytime .",
         "I can't wait to meet you again soon to celebrate all these moments together.💖",
         "Happy Birthday, my love! I want to give you all the happiness in the world, and this is just the beginning.",
-        "Your smile is the most beautiful thing I've ever seen. Please keep smiling forever! 🎈"
+        "Your smile is the most beautiful thing I've ever seen. Please keep smiling forever!🎈"
     ];
 
     let messageIndex = 0;
@@ -20,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (messageIndex < messages.length) {
             // Hide intro message after the first click
             introMessage.style.display = 'none';
-
             messageContainer.classList.remove('hidden');
             messageText.textContent = messages[messageIndex];
             messageText.style.animation = 'none'; // Reset animation
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         messageText.innerHTML = `
             <p style="font-size: 2.5em; color: #e74c3c;">Happy Birthday, My Life! 💍</p>
             <p style="font-size: 1.5em;">- Your Partner</p>
-            <p style="font-size: 1.2em; margin-top: 20px;">I made this for you to make your birthday special. I hope you love it.</p>
+            <p style="font-size: 1.2em; margin-top: 20px;">I made this for you to make your birthday special. I hope you love it. I LOVE YOU</p>
         `;
         messageText.style.animation = 'fadeIn 1s forwards';
     }
