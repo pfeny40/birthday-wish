@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fce4ec 0%, #ffe6f0 100%);
+    font-family: 'Dancing Script', cursive;
+    color: #4a235a;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 90vw;
+    max-width: 500px;
+    height: 70vh;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.intro-message h1 {
+    font-size: 2.5em;
+    color: #8e44ad;
+}
+
+.intro-message p {
+    font-size: 1.2em;
+}
+
+.heart {
+    cursor: pointer;
+    margin-top: 30px;
+    animation: pulse 1.5s infinite;
+}
+
+.heart-emoji {
+    font-size: 8em;
+    color: #e74c3c;
+    transition: transform 0.2s ease-in-out;
+}
+
+.heart-emoji:active {
+    transform: scale(0.9);
+}
+
+.message-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#message-text {
+    font-size: 1.5em;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
